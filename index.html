@@ -12,7 +12,8 @@
             font-family: 'Vazirmatn', Arial, sans-serif;
             margin: 20px;
             direction: rtl;
-            background-color: #ffffff;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
         }
 
         .header-container {
@@ -25,7 +26,7 @@
         .logo {
             max-width: 80px;
             border-radius: 30%;
-            border: 2px solid #ccc;
+            border: 2px solid #fff;
             padding: 1px;
             background-color: white;
         }
@@ -33,14 +34,14 @@
         .header {
             font-size: 24px;
             font-weight: bold;
-            color: #222;
+            color: white;
             margin-top: 10px;
         }
 
         .separator {
             width: 50%;
             height: 2px;
-            background-color: #bbb;
+            background-color: white;
             margin: 10px auto;
         }
 
@@ -50,7 +51,7 @@
         }
 
         .telegram-link a {
-            color: blue;
+            color: #00aced;
             text-decoration: none;
         }
 
@@ -69,11 +70,12 @@
         .config-box {
             width: 80%;
             max-width: 500px;
-            background: #f9f9f9;
+            background: rgba(255, 255, 255, 0.7);
             padding: 15px;
             border-radius: 10px;
-            border: 2px solid #ccc;
+            border: 2px solid #007bff;
             text-align: center;
+            color: black;
         }
 
         textarea {
@@ -81,17 +83,17 @@
             height: 120px;
             font-size: 14px;
             direction: ltr;
-            border: 2px solid #ccc;
+            border: 2px solid #007bff;
             border-radius: 10px;
             padding: 10px;
             resize: none;
-            background: #f8f8f8;
+            background: white;
         }
 
         .copy-button {
-            background-color: green;
+            background-color: #ff5722;
             color: white;
-            padding: 8px 16px;
+            padding: 10px 20px;
             font-size: 14px;
             border: none;
             border-radius: 10px;
@@ -100,7 +102,7 @@
         }
 
         .copy-button:hover {
-            background-color: darkgreen;
+            background-color: #e64a19;
         }
 
         .left-container {
@@ -114,7 +116,7 @@
         }
 
         .telegram-box {
-            background: rgba(0, 136, 204, 0.9);
+            background: #00aced;
             color: white;
             padding: 6px 10px;
             border-radius: 5px;
@@ -132,6 +134,7 @@
         .telegram-box img {
             width: 16px;
             height: 16px;
+            margin-left: 5px;
         }
 
         .visit-box {
@@ -155,7 +158,7 @@
         }
 
         .follow-telegram a {
-            color: #0088cc;
+            color: #00aced;
             text-decoration: none;
             font-size: 16px;
         }
@@ -174,7 +177,6 @@
 </head>
 <body>
 
-
     <div class="header-container">
         <img class="logo" src="https://github.com/sinavm/sinavm/raw/refs/heads/main/IMG_7428.jpeg" alt="Logo">
         <div class="header">دریافت کانفیگ V2Ray</div>
@@ -190,24 +192,19 @@
             <p>کانفیگ شماره ۱</p>
             <textarea id="configText1" readonly>
 vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@www.speedtest.net:80?type=ws&host=redfree8w.pooriam.ir&path=/sinavm-sinavm?ed%3D2550&security=none#%F0%9F%8E%89@%F0%9D%97%A6%F0%9D%97%B6%F0%9D%97%A1%F0%9D%97%94%F0%9D%97%A9%F0%9D%97%A0%F0%9F%91%88%F0%9F%8F%BB%D9%88%DB%8C%DA%98%D9%87%20%D9%86%D9%88%D8%B1%D9%88%D8%B2
-
             </textarea>
             <br>
             <button class="copy-button" onclick="copyConfig('configText1')">📋 کپی کانفیگ</button>
         </div>
 
-        <!-- باکس ۲ -->
         <div class="config-box">
             <p>کانفیگ شماره ۲</p>
             <textarea id="configText2" readonly>
 vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.21.56.44:443?type=ws&host=301.pooriam.ir&path=/Telegram-sinavm-sinavm?ed%3D2560&security=tls&fp=randomized&sni=301.POoRIam.ir#%F0%9F%8E%88@%F0%9D%97%A6%F0%9D%97%B6%F0%9D%97%A1%F0%9D%97%94%F0%9D%97%A9%F0%9D%97%A0%F0%9F%91%88%F0%9F%8F%BB%D9%88%DB%8C%DA%98%D9%87%20%D9%86%D9%88%D8%B1%D9%88%D8%B2
-
             </textarea>
             <br>
             <button class="copy-button" onclick="copyConfig('configText2')">📋 کپی کانفیگ</button>
         </div>
-
-    </div>
 
     <div class="left-container">
         <a class="telegram-box" href="https://T.me/sinavm" target="_blank">
@@ -218,14 +215,14 @@ vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.21.56.44:443?type=ws&host=301.p
             بازدید شما: <span id="user-visit-count">0</span>
         </div>
         <div class="visit-box">
-            بازدید کل: <span id="total-visit-count">7582</span>
+            بازدید کل: <span id="total-visit-count">...</span>
         </div>
     </div>
 
     <div class="follow-telegram">
         <a href="https://T.me/sinavm" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" alt="Telegram Logo">
-            کاری از کانال تلگرام SiNAVM
+            کاری از کانال تلگرام SinaVM
         </a>
     </div>
 
@@ -236,9 +233,7 @@ vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.21.56.44:443?type=ws&host=301.p
             document.execCommand("copy");
             alert("کانفیگ کپی شد!");
         }
-
-
-        let visits = localStorage.getItem("visitCount") || 0;
+                let visits = localStorage.getItem("visitCount") || 0;
         visits++; 
         localStorage.setItem("visitCount", visits);
         document.getElementById("user-visit-count").innerText = visits;
@@ -256,6 +251,5 @@ vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.21.56.44:443?type=ws&host=301.p
             })
             .catch(error => console.error("Fetch error:", error));
     </script>
-
 </body>
 </html>
